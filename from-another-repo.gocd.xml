@@ -4,6 +4,7 @@
     <pipeline name="upstream123" isLocked="false">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
+        <pipeline pipelineName="DownStream2" stageName="downstream" />
       </materials>
       <stage name="defaultStage">
         <jobs>
