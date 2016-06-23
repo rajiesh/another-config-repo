@@ -17,4 +17,16 @@
       </stage>
     </pipeline>
   </pipelines>
+  <environments>
+    <environment name="dev">
+      <pipelines>
+        <pipeline name="upstream123" />
+      </pipelines>
+      <environmentvariables>
+        <variable name="remote">
+          <value>variable</value>
+        </variable>
+      </environmentvariables>
+    </environment>
+  </environments>
 </cruise>
