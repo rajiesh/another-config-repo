@@ -4,7 +4,7 @@
     <pipeline name="upstream123" labeltemplate="${main-repo-pipeline}" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="main-repo-pipeline" stageName="atge1" materialName="main-repo-pipeline" />
+        <pipeline pipelineName="main-repo-pipeline" stageName="stage1" materialName="main-repo-pipeline" />
       </materials>
       <stage name="defaultStage">
         <jobs>
