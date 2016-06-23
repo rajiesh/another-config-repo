@@ -4,7 +4,7 @@
     <pipeline name="upstream123" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="create-maven-release" stageName="create-maven-release" materialName="maven-repo" />
+        <pipeline pipelineName="create-maven-release1" stageName="create-maven-release" materialName="maven-repo" />
       </materials>
       <stage name="defaultStage">
         <jobs>
