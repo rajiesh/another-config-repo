@@ -21,6 +21,7 @@
     <environment name="dev">
       <pipelines>
         <pipeline name="upstream123" />
+        <pipeline name="non-exist" />
       </pipelines>
       <agents>
         <physical uuid="a0784a4c-2cb8-4a43-96f9-40b2af8666a1" />
