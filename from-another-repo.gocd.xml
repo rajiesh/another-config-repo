@@ -4,7 +4,6 @@
     <pipeline name="upstream123" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="main-repo-pipeline" stageName="defaultStage" materialName="main-repo" />
       </materials>
       <stage name="defaultStage">
         <jobs>
@@ -16,16 +15,12 @@
         </jobs>
       </stage>
     </pipeline>
-    <pipeline name="partial-repo" isLocked="true" template="for-partial-repo">
-      <materials>
-        <git url="https://github.com/rajiesh/self-express.git" />
-      </materials>
-    </pipeline>
   </pipelines>
   <environments>
     <environment name="dev">
       <pipelines>
         <pipeline name="upstream123" />
+        <pipeline name="non-existing" />
       </pipelines>
       <environmentvariables>
         <variable name="remote">
