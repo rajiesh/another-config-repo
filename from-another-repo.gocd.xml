@@ -15,11 +15,6 @@
         </jobs>
       </stage>
     </pipeline>
-    <pipeline name="using-template" isLocked="false" template="for-partial-repo">
-      <materials>
-        <git url="https://github.com/rajiesh/self-express.git" />
-      </materials>
-    </pipeline>
   </pipelines>
   <environments>
     <environment name="dev">
