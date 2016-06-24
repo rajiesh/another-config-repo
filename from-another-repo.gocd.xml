@@ -4,7 +4,6 @@
     <pipeline name="upstream123" labeltemplate="${main-repo-pipeline}" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="main-repo-pipeline" stageName="defaultStage" materialName="main-repo-pipeline" />
       </materials>
       <stage name="defaultStage">
         <jobs>
