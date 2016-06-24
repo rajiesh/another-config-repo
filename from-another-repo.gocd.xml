@@ -16,15 +16,17 @@
         </jobs>
       </stage>
     </pipeline>
+    <pipeline name="using-template" isLocked="false" template="for-partial-repo">
+      <materials>
+        <git url="https://github.com/rajiesh/self-express.git" />
+      </materials>
+    </pipeline>
   </pipelines>
   <environments>
     <environment name="dev">
       <pipelines>
         <pipeline name="upstream123" />
       </pipelines>
-      <agents>
-        <physical uuid="a0784a4c-2cb8-4a43-96f9-40b2af8666a1" />
-      </agents>
       <environmentvariables>
         <variable name="remote">
           <value>variable</value>
