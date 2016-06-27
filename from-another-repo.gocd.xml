@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <pipelines group="group1">
-    <pipeline name="upstream123" isLocked="true">
+    <pipeline name="another-repo" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
+        <pipeline pipelineName="no-duplicate" stageName="defaultStage" materialName="no-duplicate" />
       </materials>
       <stage name="defaultStage">
         <jobs>
@@ -16,16 +17,4 @@
       </stage>
     </pipeline>
   </pipelines>
-  <environments>
-    <environment name="dev">
-      <pipelines>
-        <pipeline name="upstream123" />
-      </pipelines>
-      <environmentvariables>
-        <variable name="remote">
-          <value>variable</value>
-        </variable>
-      </environmentvariables>
-    </environment>
-  </environments>
 </cruise>
