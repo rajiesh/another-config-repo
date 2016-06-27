@@ -16,5 +16,20 @@
         </jobs>
       </stage>
     </pipeline>
+    <pipeline name="modified-repo" isLocked="true">
+      <materials>
+        <git url="https://github.com/rajiesh/self-express.git" />
+        <pipeline pipelineName="no-duplicate" stageName="defaultStage" materialName="no-duplicate" />
+      </materials>
+      <stage name="defaultStage">
+        <jobs>
+          <job name="defaultJob">
+            <tasks>
+              <exec command="ls" />
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
   </pipelines>
 </cruise>
