@@ -4,7 +4,7 @@
     <pipeline name="another-repo" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="no-duplicate" stageName="defaultStage" materialName="no-duplicate" />
+        <pipeline pipelineName="jsonpipe" stageName="testStage" materialName="jsonbased" />
       </materials>
       <stage name="defaultStage">
         <jobs>
@@ -19,7 +19,7 @@
     <pipeline name="modified-repo" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="no-duplicate" stageName="defaultStage" materialName="no-duplicate" />
+        <pipeline pipelineName="jsonpipe" stageName="testStage" materialName="jsonbased" />
       </materials>
       <stage name="defaultStage">
         <jobs>
