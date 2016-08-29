@@ -19,7 +19,7 @@
     <pipeline name="modified-repo" isLocked="true">
       <materials>
         <git url="https://github.com/rajiesh/self-express.git" />
-        <pipeline pipelineName="jsonpipe" stageName="testStage" materialName="jsonbased" />
+        <!-- <pipeline pipelineName="jsonpipe" stageName="testStage" materialName="jsonbased" /> -->
       </materials>
       <stage name="defaultStage">
         <jobs>
