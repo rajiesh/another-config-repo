@@ -6,6 +6,12 @@
     {
       "url": "https://github.com/rajiesh/my-config.git",
       "type": "git"
+    },
+    {
+      "type": "dependency",
+      "name": "dependency",
+      "pipeline": "P2",
+      "stage": "testStage"
     }
   ],
   "stages": [
